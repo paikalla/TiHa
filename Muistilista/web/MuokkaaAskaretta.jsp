@@ -1,19 +1,15 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Muistilista</title>
-        <link href="css/bootstrap.css" rel="stylesheet">
-        <link href="css/bootstrap-theme.css" rel="stylesheet">
-        <link href="css/main.css" rel="stylesheet">
-        <style type="text/css">
-        </style>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body style="text-align: left;" background="listakuva.jpg">	
-    
-        <div class="container">
+<%-- 
+    Document   : Askareet
+    Created on : 18-Sep-2014, 12:41:16
+    Author     : viukari
+--%>
+<%@page contentType="text/html" pageEncoding="UTF-8" trimDirectiveWhitespaces="true" %>
+<%@ taglib prefix="t" tagdir="/WEB-INF/tags" %>
+<t:pohja pageTitle="Muistilista">
+           <div class="container">
             <h1>Muokkaa askareitasi</h1>
+            <br>
+            <br>
             <form class="form-horizontal" role="form" action="lomake.html" method="POST">
 
                 <div class="form-group">
@@ -55,6 +51,4 @@
                 <button type="submit" class="btn btn-default">Päivitä</button>
             </div>
         </div>
-    </form>
-
-</body>
+</t:pohja>

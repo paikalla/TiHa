@@ -1,24 +1,13 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
-    <head>
-        <title>Muistilista</title>
-        <link href="css/bootstrap.css" rel="stylesheet">
-        <link href="css/bootstrap-theme.css" rel="stylesheet">
-        <link href="css/main.css" rel="stylesheet">
-        <style type="text/css">
-        </style>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body style="text-align: left;" background="listakuva.jpg">	
-    <body>
+<%-- 
+    Document   : sivujsp
+    Created on : 17-Sep-2014, 12:44:58
+    Author     : viukari
+--%>
 
-        <div class="container">
+<%@page contentType="text/html" pageEncoding="UTF-8" trimDirectiveWhitespaces="true" %>
+<%@ taglib prefix="t" tagdir="/WEB-INF/tags" %>
+<t:pohja pageTitle="Muistilista">
+<div class="container">
             <ul>
                 <h1>Muistilista</h1>
                 <h2>Mitäs askareita pitikään tehdä? </h2>
@@ -30,18 +19,19 @@ and open the template in the editor.
                 <br>
                 <br>             
                 <div class="container">
+                    <div class="alert alert-danger">Virhe! ${virheViesti}</div>
                     <h3>Kirjaudu sisään</h3>
-                    <form class="form-horizontal" role="form" action="Kayttajanakyma.html" method="POST">
+                    <form class="form-horizontal" role="form" action="KirjautuminenServlet" method="POST">
                         <div class="form-group">
                             <label for="inputUsername1" class="col-md-2 control-label">Tunnus</label>
                             <div class="col-md-10">
-                                <input type="Username" class="form-control" id="inputUsername1" name="Username" placeholder="Username">
+                                <input type="text" class="form-control" value="${kayttajatunnus}" id="inputUsername1" name="kayttajatunnus" placeholder="Username">
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="inputPassword1" class="col-md-2 control-label">Salasana</label>
                             <div class="col-md-10">
-                                <input type="Password" class="form-control" id="inputPassword1" name="password" placeholder="Password">
+                                <input type="password" class="form-control" id="inputPassword1" name="salasana" placeholder="password">
                             </div>
                         </div>
                         <div class="form-group">
@@ -54,14 +44,13 @@ and open the template in the editor.
                             </div>
                         </div>
                         <div class="form-group">
-                            <div class="col-md-offset-2 col-md-10">  
-                                <button onlick="#"><a href="Kayttajanakyma.html">Kirjaudu sisään</a></button>
+                            <div class="col-md-offset-2 col-md-10" style="color:black;">
+                                <button type="submit">Kirjaudu sisään</button>
                             </div>
                         </div>
                     </form>
                 </div>
             </ul>
-            
+
         </div>
-    </body>
-</html>
+</t:pohja>
