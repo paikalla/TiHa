@@ -24,7 +24,7 @@ public class KayttajaServlet extends HttpServlet {
     protected boolean onkoKirjautunut(HttpServletRequest request, HttpServletResponse response)
             throws IOException{
         HttpSession session = request.getSession();
-        Kayttaja kirjautunut = (Kayttaja)session.getAttribute("kirjautunut");
+        Object kirjautunut = session.getAttribute("kirjautunut");
         if (kirjautunut!= null) {
                 return true;
         }else{

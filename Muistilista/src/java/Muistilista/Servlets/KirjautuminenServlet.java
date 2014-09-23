@@ -25,7 +25,7 @@ public class KirjautuminenServlet extends KayttajaServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        HttpSession session = request.getSession(false);
+        HttpSession session = request.getSession();
         PrintWriter out = response.getWriter();
 
         String salasana = request.getParameter("salasana");
@@ -57,8 +57,8 @@ public class KirjautuminenServlet extends KayttajaServlet {
         Kayttaja kayttaja = Kayttaja.etsiKayttajaTunnuksilla(kayttajatunnus, salasana);
         
         if (kayttaja != null){
-    /* Jos tunnus on oikea, ohjataan käyttäjä HTTP-ohjauksella kissalistaan. */
-            session.setAttribute("kirjautunut", kayttaja);
+    /* Jos tunnus on oikea, ohjataan käyttäjä HTTP-ohjauksella muistilistaan. */
+            session.setAttribute("kirjautunut", kayttaja.getKayttaja());
             response.sendRedirect("Kayttajanakyma");
         } else { 
             request.setAttribute("kayttajatunnus", kayttajatunnus);
@@ -66,7 +66,7 @@ public class KirjautuminenServlet extends KayttajaServlet {
         NaytaJSP("Kirjautuminen.jsp", request, response);
                     
   }
-    }
+    } 
 
 
 

@@ -26,7 +26,7 @@
     </servlet>
     <servlet>
         <servlet-name>Askareet</servlet-name>
-        <servlet-class>Muistilista.Servlets.Askareet</servlet-class>
+        <servlet-class>Muistilista.Servlets.AskareetServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>LisaaAskare</servlet-name>

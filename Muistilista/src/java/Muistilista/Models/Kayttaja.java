@@ -33,6 +33,11 @@ public class Kayttaja {
     public void setSalasana(String salasana) {
         this.salasana = salasana;
     }
+    
+    public int getKayttaja(){
+        return kayttajaid;
+    }
+             
 
     public static Kayttaja etsiKayttajaTunnuksilla(String kayttaja, String salasana) {
 

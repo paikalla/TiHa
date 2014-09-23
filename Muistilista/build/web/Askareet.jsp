@@ -6,6 +6,7 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8" trimDirectiveWhitespaces="true" %>
 <%@ taglib prefix="t" tagdir="/WEB-INF/tags" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <t:pohja pageTitle="Muistilista">
     <div class="container">
         <h1>Muistilistasi</h1>
@@ -22,37 +23,20 @@
                 </tr>
             </thead>
             <tbody>
+            <c:forEach var="askare" items="${listaus}">
                 <tr>
-
-                    <td>1</td>
-                    <td>Aamiainen Tiffanylla</td>
-                    <td>Tooosi tärkeä tilaisuus</td>
-                    <td>Työ</td>
-                    <td> <form action="MuokkaaAskaretta" method="POST">
-                            <button type="submit" style="color:black">Muokkaa</button>
-                        </form>
-                    </td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Varaa lääkäriaika</td>
-                    <td>Hoida pois alta!</td>
-                    <td>Vapaa-aika</td>
+                    <td class="askare"><c:out value="${askare.arvo}"/></td>
+                    <td class="askare"><c:out value="${askare.askareNimi}"/></td>
+                    <td class="askare"><c:out value="${askare.perustelu}"/></td>
+                    <td class="askare"><c:out value="${askare.luokkaNimi}"/></td>
                     <td> <form action="MuokkaaAskaretta" method="POST">
                             <button type="submit" style="color:black">Muokkaa</button>
                         </form> 
                     </td>
                 </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Uusi tentti 10.12.Blaah. </td>
-                    <td>Evvk</td>
-                    <td>Opiskelu</td>
-                    <td> <form action="MuokkaaAskaretta" method="POST">
-                            <button type="submit" style="color:black">Muokkaa</button>
-                        </form>
-                    </td>
-                </tr>
+              
+            </c:forEach>
+
             </tbody>
         </table>
     </div>
