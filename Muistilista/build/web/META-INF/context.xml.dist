@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context antiJARLocking="true" path="/Muistilista">
+    <Resource name="jdbc/viukari" auth="Container"
+        type="javax.sql.DataSource" removeAbandoned="true"
+        removeAbandonedTimeout="30" maxActive="100"
+        maxIdle="30" maxWait="10000" username="viukari"
+        password="e7b827185794a7d7"
+        driverClassName="org.postgresql.Driver"
+        url="jdbc:postgresql://localhost:5432/viukari" />
+</Context>

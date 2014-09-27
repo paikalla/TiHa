@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/home/viukari/TiHa/Muistilista/web/KirjauduUlos.jsp</file>
+            <file>file:/home/viukari/TiHa/Muistilista/web/WEB-INF/web.xml</file>
+            <file>file:/home/viukari/TiHa/Muistilista/web/Askareet.jsp</file>
+            <file>file:/home/viukari/TiHa/Muistilista/nbproject/build-impl.xml</file>
+            <file>file:/home/viukari/TiHa/Muistilista/web/MuokkaaAskaretta.jsp</file>
+            <file>file:/home/viukari/TiHa/Muistilista/web/WEB-INF/tags/pohja.tag</file>
+            <file>file:/home/viukari/TiHa/Muistilista/src/java/Muistilista/Servlets/KirjautuminenServlet.java</file>
+            <file>file:/home/viukari/TiHa/Muistilista/src/java/Muistilista/Servlets/MuokkaaAskarettaServlet.java</file>
+            <file>file:/home/viukari/TiHa/Muistilista/src/java/Muistilista/Models/MuokkaaAskaretta.java</file>
+            <file>file:/home/viukari/TiHa/Muistilista/src/java/Muistilista/Servlets/NaytaJSP.java</file>
+            <file>file:/home/viukari/TiHa/Muistilista/src/java/Muistilista/Servlets/KayttajaServlet.java</file>
+            <file>file:/home/viukari/TiHa/Muistilista/web/LisaaAskare.jsp</file>
+            <file>file:/home/viukari/TiHa/Muistilista/web/Kirjautuminen.jsp</file>
+            <file>file:/home/viukari/TiHa/Muistilista/web/WEB-INF/css/main.css</file>
+            <file>file:/home/viukari/TiHa/Muistilista/src/java/Muistilista/Models/Askareet.java</file>
+            <file>file:/home/viukari/TiHa/Muistilista/src/java/TestiServlet.java</file>
+            <file>file:/home/viukari/TiHa/Muistilista/src/java/Muistilista/Servlets/KirjauduUlos.java</file>
+            <file>file:/home/viukari/TiHa/Muistilista/src/java/Muistilista/Servlets/LisaaAskareServlet.java</file>
+            <file>file:/home/viukari/TiHa/Muistilista/web/Kayttajanakyma.jsp</file>
+            <file>file:/home/viukari/TiHa/Muistilista/web/index.jsp</file>
+            <file>file:/home/viukari/TiHa/Muistilista/src/java/Muistilista/Models/Kayttaja.java</file>
+            <file>file:/home/viukari/TiHa/Muistilista/src/java/Muistilista/Models/AskareenLisays.java</file>
+            <file>file:/home/viukari/TiHa/Muistilista/src/java/Muistilista/Servlets/Kayttajanakyma.java</file>
+            <file>file:/home/viukari/TiHa/Muistilista/src/java/Muistilista/Models/Listaukset.java</file>
+            <file>file:/home/viukari/TiHa/Muistilista/web/css/main.css</file>
+            <file>file:/home/viukari/TiHa/Muistilista/src/java/Muistilista/Servlets/AskareetServlet.java</file>
+        </group>
+    </open-files>
+</project-private>
