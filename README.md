@@ -1,5 +1,5 @@
 TiHa
 ====
 
-Sovellus: <a href="viukari.users.cs.helsinki.fi">Muistilista</a>
+Sovellus: <a href="http://viukari.users.cs.helsinki.fi">Muistilista</a>
 
