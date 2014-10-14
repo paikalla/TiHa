@@ -1,0 +1,24 @@
+<div class="page-header">
+  <h1>Luokat</h1>
+</div>
+
+<a href="#/luokat/uusi" class="btn btn-default">Lisää luokka</a>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Nimi</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="category in categories">
+      <td>{{category.name}}</td>
+      <td><a href="#/luokat/{{category.id}}/askareet" class="btn btn-primary btn-sm">Askareet</a></td>
+      <td><a class="btn btn-sm btn-default" href="#/luokat/{{category.id}}">Muokkaa</a></td>
+      <td><button class="btn btn-sm btn-danger" ng-click="remove(category, $index)">Poista</button></td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,20 @@
+<div class="page-header">
+  <h1>Luokan "{{category.name}}" askareet</h1>
+</div>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Prioriteetti</th>
+      <th>Kuvaus</th>
+      <th>Luokka</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="todo in todos | orderBy: 'priority'">
+      <td>{{todo.priority}}</td>
+      <td>{{todo.description}}</td>
+      <td>{{todo.category}}</td>
+    </tr>
+  </tbody>
+</table>

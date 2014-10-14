@@ -1,0 +1,26 @@
+<div class="page-header">
+  <h1>Askareet</h1>
+</div>
+
+<a href="#/askareet/uusi" class="btn btn-default">Lisää askare</a>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Prioriteetti</th>
+      <th>Kuvaus</th>
+      <th>Luokka</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="todo in todos | orderBy: 'priority'">
+      <td>{{todo.priority}}</td>
+      <td>{{todo.description}}</td>
+      <td>{{todo.category}}</td>
+      <td><a class="btn btn-sm btn-default" href="#/askareet/{{todo.id}}">Muokkaa</a></td>
+      <td><button class="btn btn-sm btn-danger" ng-click="remove(todo, $index)">Poista</button></td>
+    </tr>
+  </tbody>
+</table>
